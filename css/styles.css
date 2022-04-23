@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+html {
+  font-size: 62.5%; }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+input[type='text'] {
+  font-size: 16px; }
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh; }
+
+.main-article {
+  max-width: 70rem;
+  margin: 7rem auto; }
+  .main-article .content .logo {
+    text-align: center; }
+  .main-article .content .sub-content {
+    text-align: center; }
+    .main-article .content .sub-content h2 {
+      font-size: 4rem;
+      font-weight: 300;
+      color: #969696;
+      margin-top: 3rem; }
+      .main-article .content .sub-content h2 span {
+        font-weight: 600;
+        color: #151f29; }
+    .main-article .content .sub-content p {
+      color: #969696;
+      margin-top: 1rem;
+      font-size: 2rem; }
+  .main-article .content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 7rem;
+    position: relative; }
+    .main-article .content form .input-control {
+      display: flex;
+      gap: .5rem; }
+      .main-article .content form .input-control.error input {
+        border-color: #ff5263; }
+      .main-article .content form .input-control.success input {
+        border-color: green; }
+      .main-article .content form .input-control .error-text {
+        position: absolute;
+        top: 5rem;
+        left: 2.5rem;
+        color: #ff5263;
+        font-style: italic; }
+      .main-article .content form .input-control input {
+        padding: 1rem 15rem 1rem 2rem;
+        border: 1px solid #c2d3ff;
+        border-radius: 2rem;
+        outline: none; }
+        .main-article .content form .input-control input::placeholder {
+          color: #c2d3ff;
+          text-align: left; }
+      .main-article .content form .input-control button {
+        border: none;
+        background-color: #4f7df3;
+        color: #fff;
+        padding: 1rem 5rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all .2s ease-in-out; }
+        .main-article .content form .input-control button:hover {
+          transform: translateY(-1px);
+          box-shadow: 0px 15px 20px rgba(194, 211, 255, 0.5); }
+        .main-article .content form .input-control button:active {
+          transform: translateY(0);
+          box-shadow: 0px 7px 10px rgba(194, 211, 255, 0.5); }
+  .main-article .hero img {
+    width: 50rem; }
+  .main-article section.footer {
+    text-align: center;
+    margin-top: 7rem; }
+    .main-article section.footer ul {
+      margin-bottom: 1.5rem; }
+      .main-article section.footer ul li {
+        padding: .5rem;
+        display: inline;
+        cursor: pointer; }
+        .main-article section.footer ul li .fa-brands {
+          border: 1px solid #c2d3ff;
+          border-radius: 100%;
+          color: #4f7df3;
+          font-size: 2rem;
+          padding: .5rem; }
+    .main-article section.footer .copyright {
+      color: #969696; }
+
+@media screen and (max-width: 600px) {
+  .main-article .content .sub-content h2 {
+    font-size: 3rem; }
+  .main-article .content .sub-content p {
+    font-size: 1.4rem; }
+  .main-article .content form .input-control {
+    flex-direction: column; }
+    .main-article .content form .input-control .error-text {
+      position: initial;
+      margin-left: 2rem; }
+  .main-article .hero img {
+    max-width: 39rem; } }
+
+@media screen and (max-width: 400px) {
+  .main-article {
+    padding: 0 2rem; }
+    .main-article .content form .input-control input {
+      width: 100%; }
+    .main-article .hero img {
+      max-width: 100%; } }
